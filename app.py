@@ -4,6 +4,7 @@ import pyshorteners
 app = Flask(__name__)
 api_key = "f82efcc559a1b6e4f0d3c82842903f451aec8bde"
 og_url = ""
+urlshort = ""
 
 def checkurl():
     if len(og_url)>32:
