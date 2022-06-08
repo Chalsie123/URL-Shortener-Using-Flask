@@ -17,7 +17,7 @@ def shorturl():
 def clicks():
     urlshort, inpu_api = shorturl()
     no_of_clicks = inpu_api.bitly.total_clicks(urlshort)
-    return no_of_clicks
+    return no_of_clicks, urlshort
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
@@ -32,13 +32,13 @@ def result():
     #     return render_template('click.html', urlshort=urlshort)
     og_url = request.form['original_url']
     urlshort, inpu_api = shorturl()
-    og_url=checkurl()
+    # og_url=checkurl()
     return render_template('result.html', urlshort=urlshort, og_url=og_url)
 
 @app.route('/click', methods=['GET', 'POST'])
 def click():
-    no_of_clicks = clicks()
-    return render_template('click.html', no_of_clicks=no_of_clicks, og_url=og_url)
+    no_of_clicks, urlshort = clicks()
+    return render_template('click.html', no_of_clicks=no_of_clicks, urlshort=urlshort)
 
 # print(urlshort)
 
