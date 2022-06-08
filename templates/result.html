@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block cssfile %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/res.css')}}">
+{% endblock cssfile %}
+
+{% block body %}
+<div class="container" >
+<form action="/click", method="POST">
+<input name="urlshort" value="{{urlshort}}">
+<!-- <button onclick="">Copy to ClipBoard</button> -->
+<p>Original URL - {{og_url}}</p>
+<p><button>Track</button> the total number of times the url was clicked</p>
+</form>
+</div>
+{% endblock body %}

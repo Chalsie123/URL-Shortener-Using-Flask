@@ -1,0 +1,15 @@
+html, 
+body {
+    min-height: 100%;
+}
+
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, blue, red);
+}
+
+div{
+    text-align: center;
+    background-color: white;
+    /* height: 100px; */
+}
