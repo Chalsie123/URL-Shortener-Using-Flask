@@ -5,8 +5,9 @@
 {% endblock cssfile %}
 
 {% block body %}
-<div class="container" >
+<div class="container">
 <form action="/click", method="POST">
+    <h3>Your Shortened URL is</h3>
 <input name="urlshort" value="{{urlshort}}">
 <!-- <button onclick="">Copy to ClipBoard</button> -->
 <p>Original URL - {{og_url}}</p>

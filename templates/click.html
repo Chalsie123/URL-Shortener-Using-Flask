@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block cssfile %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/res.css')}}">
+{% endblock cssfile %}
+
 {% block body %}
-    <p>{{no_of_clicks}}</p>
+    <h1>The Number of times your {{og_url}} Clicked was {{no_of_clicks}}</h1>
 {% endblock body %}

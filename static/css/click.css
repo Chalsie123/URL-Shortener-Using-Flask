@@ -8,8 +8,6 @@ body{
     background-image: linear-gradient(to bottom right, blue, red);
 }
 
-div{
-    text-align: center;
-    background-color: white;
-    /* height: 100px; */
+h2{
+    color: chartreuse;
 }

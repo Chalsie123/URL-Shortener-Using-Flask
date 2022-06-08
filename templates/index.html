@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block cssfile %}
-<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/index-main.css')}}">
 {% endblock cssfile %}
 {% block body %}
 <div class="container">
 <form action="/result" method="POST">
     <input type="url" placeholder="Enter the link here" name="original_url"/>
-    <button class="btn btn-primary" type="submit">Shorten</button>
+    <input type="submit" value="Shorten" id="hello">
 </form>
 </div>
 {% endblock body %}

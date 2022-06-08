@@ -1,4 +1,24 @@
+html, 
+body {
+    min-height: 100%;
+}
+
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, blue, red);
+}
+
+h2{
+    color: chartreuse;
+}
+
 div{
     text-align: center;
-    background-color: purple;
+    background-color: lightgreen;
+    height: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 65px;
+    outline: none;
+    border-radius: 10px;
 }

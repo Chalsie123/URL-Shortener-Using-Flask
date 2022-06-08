@@ -1,0 +1,55 @@
+html, 
+body {
+    min-height: 100%;
+}
+
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, blue, red);
+}
+
+h2{
+    color: chartreuse;
+}
+
+div{
+    text-align: center;
+    background-color: lightgreen;
+    height: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 85px;
+    outline: none;
+    border-radius: 10px;
+}
+
+form{
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    margin: 20px 20px;
+    height: 50px;
+    border: chartreuse;
+    border-radius: 10px;
+    font-family: Shanti;
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  input:focus {
+    outline: none;
+    border: solid 5px #00FFCE;
+}
+
+#hello {
+    background-color: PaleVioletRed;
+    border:  none;
+    width:  200px;
+    color: white;
+}
+
+#hello:hover {
+    background-color: MediumVioletRed;
+}
