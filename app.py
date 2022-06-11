@@ -3,7 +3,7 @@ import pyshorteners
 
 app = Flask(__name__)
 #api_key = config.api_key
-api_key = "f82efcc559a1b6e4f0d3c82842903f451aec8bde"
+api_key = You API KEY
 og_url = ""
 urlshort = ""
 
